@@ -1,0 +1,305 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Material Design Overrides */
+.mat-mdc-card {
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+.mat-mdc-card-header {
+  background-color: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.mat-mdc-card-title {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Custom Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.p-24 {
+  padding: 24px;
+}
+
+/* Dashboard Specific Styles */
+.dashboard-card {
+  height: 100%;
+  min-height: 200px;
+}
+
+.dashboard-card .mat-mdc-card-content {
+  padding: 16px;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #1976d2;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.positive-change {
+  color: #4caf50;
+}
+
+.negative-change {
+  color: #f44336;
+}
+
+/* Portfolio Styles */
+.portfolio-summary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.portfolio-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.portfolio-change {
+  font-size: 1.125rem;
+  opacity: 0.9;
+}
+
+/* Holdings Table Styles */
+.holdings-table {
+  width: 100%;
+}
+
+.holdings-table .mat-mdc-row:hover {
+  background-color: #f5f5f5;
+}
+
+.holding-symbol {
+  font-weight: 500;
+  color: #1976d2;
+}
+
+.holding-name {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* Stock Screener Styles */
+.screener-filters {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filter-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.filter-field {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Analytics Styles */
+.analytics-chart {
+  height: 400px;
+  margin-bottom: 24px;
+}
+
+.metric-card {
+  text-align: center;
+  padding: 24px;
+}
+
+.metric-card .metric-value {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.metric-card .metric-label {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filter-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filter-field {
+    min-width: auto;
+  }
+  
+  .portfolio-value {
+    font-size: 2rem;
+  }
+  
+  .metric-value {
+    font-size: 1.5rem;
+  }
+}
+
+/* Loading Spinner */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* Error States */
+.error-message {
+  color: #f44336;
+  text-align: center;
+  padding: 24px;
+}
+
+/* Success States */
+.success-message {
+  color: #4caf50;
+  text-align: center;
+  padding: 24px;
+}
+
+/* Navigation Styles */
+.sidenav-container {
+  height: 100vh;
+}
+
+.sidenav {
+  width: 250px;
+  background-color: #fafafa;
+}
+
+.sidenav .mat-mdc-list-item {
+  border-radius: 0 24px 24px 0;
+  margin-right: 16px;
+  margin-bottom: 4px;
+}
+
+.sidenav .mat-mdc-list-item:hover {
+  background-color: #e3f2fd;
+}
+
+.sidenav .mat-mdc-list-item.active {
+  background-color: #1976d2;
+  color: white;
+}
+
+.toolbar {
+  background-color: #1976d2;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.toolbar-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* Dialog Styles */
+.dialog-content {
+  min-width: 400px;
+}
+
+.dialog-actions {
+  padding: 16px 24px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Form Styles */
+.form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-row .form-field {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/* Chart Container */
+.chart-container {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+} 
